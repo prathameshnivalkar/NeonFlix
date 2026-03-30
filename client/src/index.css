@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white;
+  }
+}
+
+@layer components {
+  .neon-button {
+    @apply bg-gradient-to-r from-neon-blue to-neon-purple px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity;
+  }
+  
+  .video-card {
+    @apply bg-dark-surface rounded-lg overflow-hidden hover:ring-2 hover:ring-neon-blue transition-all cursor-pointer;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
